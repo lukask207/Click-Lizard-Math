@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Lizard Math</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: green;
+            margin-top: 50px;
+        }
+
+        #lizard {
+            position: absolute;
+            width: 100px;
+            cursor: pointer;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click Lizard Math</h1>
+    <p>Score: <span id="score">0</span></p>
+    <p>Addition Challenge:  <br> Hurry, click the lizard
+        <br> Type your answer in the box and press return <br> <span id="challenge"></span></p>
+    <input type="number" id="answer" placeholder="Your answer" onchange="checkAnswer();">
+    <img id="lizard" src="lizard.png" alt="Lizard" onclick="displayChallenge();">
+    <script src="js/script.js"></script>
+</body>
+
+</html>
